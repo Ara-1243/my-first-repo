@@ -1,0 +1,124 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fcecc0, #ffffff);
+    text-align: center;
+}
+.atas {
+    width: 100%;
+    margin: none;
+    position: relative;
+    display: grid;
+    grid-template-columns: 450px auto;
+}
+.logo {
+    margin: auto;
+    font-size: 45px;
+    font-weight: bold;
+    float: left;
+    font-family: Courier;
+    color: #614d0a;
+}
+.menu{
+    background-color: rgb(250, 229, 109);
+}
+nav{
+    width: 100%;
+    margin: auto;
+    line-height: 70px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: rgb(226, 199, 43);
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    color: #614d0a;
+    font-weight: bold;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.subkolom {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+.warna {
+  background-color: rgba(216, 176, 103, 0.801);
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.warna:hover {
+  transform: scale(1.03);
+}
+
+.warna img {
+  width: 200px;
+  border-radius: 25%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.jdl {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444231;
+}
+
+  
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu ul li {
+    margin: 10px 0;
+  }
+}
+
+.contact{
+    background-color: rgba(216, 176, 103, 0.801);
+    font-size: 18px;
+    font-family: Courier;
+    color: rgb(66, 37, 4);
+    text-align: center;
+    padding: 16px;
+}
+.contact i{
+    font-size: 25px;
+    color: rgb(66, 37, 4);
+    transition: transform 0.3s;
+}
+.contact i:hover{
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(226, 199, 43);
+    color: #fff;
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Materi</title>
+    <link rel="stylesheet" href="css/materi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="atas">
+          <div class="logo">StudyWithAmi</div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="materi.html">Materi</a></li>
+              <li><a href="soal.html">Latihan Soal</a></li>
+              <li><a href="tryout.html">TryOut</a></li>
+              <li><a href="about.html">Tentang Penulis</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+     <div class="belajar">
+    <div class="rencana">
+      <img src="images/umum.jpg" alt="Penalaran Umum">
+      <a class="baru" href="#" onclick="tombol('pu')">Penalaran Umum</a>
+    </div>
+    <div class="rencana">
+      <img src="images/Bindo.jpg" alt="Bahasa Indonesia">
+      <a class="baru" href="#" onclick="tombol('indo')">Bahasa Indonesia</a>
+    </div>
+    <div class="rencana">
+      <img src="images/inggris.jpg" alt="Bahasa Inggris">
+      <a class="baru" href="#" onclick="tombol('english')">Bahasa Inggris</a>
+    </div>
+    <div class="rencana">
+      <img src="images/matematika.jpg" alt="Matematika">
+      <a class="baru" href="#" onclick="tombol('pm')">Matematika</a>
+    </div>
+  </div>
+
+
+  <main>
+    <section id="pu" class="active">
+      <h2>Penalaran Umum</h2>
+      <div class="accordion">
+      <ul class="accordion">
+        <li>
+          <div class="materi">Ponens + Tollens</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Ponens + Tollens</button>
+            <div class="isi">
+              <p>Modus Ponens dan Modus Tollens adalah bentuk argumen logika yang sah.</p>
+              <p><b>Rumus Ponens:</b><br>
+                <img src="gambar/ponens1.jpg" alt="ponens1" height="160" width="200">
+                <img src="gambar/ponens2.jpg" alt="ponens2" height="160" width="200"></p>
+              <p><b>Contoh 1:</b><br> Premis 1: Jika saya menyapu rumah, maka ibu akan senang.<br> 
+              Premis 2: Saya menyapu rumah <br> 
+              Kesimpulan: Ibu akan senang </p>
+              <p><b>Contoh 2:</b> <br>
+              Premis 1: Jika saya menyapu rumah, maka ibu akan senang.
+                <br> 
+              Premis 2: ibu akan senang <br> 
+              Kesimpulan: tidak dapat disimpulkan.</p><br>
+
+              <p><b>Rumus Tollens:</b><br>
+                <img src="gambar/tollens1.jpg" alt="tollens1" height="160" width="200">
+                <img src="gambar/tollens2.jpg" alt="tollens2" height="160" width="200"></p>
+              <p><b>Contoh 1:</b><br> Premis 1: Jika saya menyapu rumah, maka ibu akan senang.<br> 
+              Premis 2: Saya menyapu rumah <br> 
+              Kesimpulan: Ibu akan senang </p>
+              <p><b>Contoh 2:</b> <br>
+              Premis 1: Jika saya menyapu rumah, maka ibu akan senang.
+                <br> 
+              Premis 2: ibu akan senang <br> 
+              Kesimpulan: tidak dapat disimpulkan.</p>
+
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="materi">Negasi</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Negasi</button>
+            <div class="isi">
+              <p>Negasi adalah penyangkalan terhadap suatu pernyataan.</p>
+              <p><strong>Rumus Negasi:</strong><br>
+                <img src="gambar/negasi1.jpg" alt="negasi1" height="160" width="200">
+                <img src="gambar/negasi2.jpg" alt="negasi2" height="160" width="200">
+                <img src="gambar/negasi3.jpg" alt="negasi3" height="160" width="200"></p>
+              <p><b>Contoh:</b><br>
+                Kejadian 1: Saya menyapu dan mengepel <br> Negasi: Saya tidak menyapu atau tidak mengepel.<br>
+                Kejadian 2: Saya menyapu atau mengepel <br> Negasi: Saya tidak menyapu dan tidak mengepel.<br>
+                Kejadian 3: Jika saya menyapu rumah, maka ibu akan senang <br> Negasi: Saya menyapu rumah dan ibu tidak senang.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="materi">Ekuivalensi</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Ekuivalensi</button>
+            <div class="isi">
+              <p><b>Rumus Ekuivalensi: </b><br>
+                <img src="gambar/ekuivalensi.jpg" alt="ekuivalensi" height="200px" width="230px"> </p>
+              <p><b>Contoh:</b><br>
+                Jika saya menyapu rumah, maka ibu akan senang <br> Ekuvalensi rumus pertama: Saya tidak menyapu rumah atau ibu akan senang.<br>
+                Ekuivalensi rumus kedua: Jika ibu tidak akan senang, maka saya tidak menyapu rumah.</p>
+            </div>
+          </div>
+        </li>
+        <li><div class="materi">Silogisme</div>
+        <div class="item">
+          <button class="nama" onclick="toggleItem(this)">Silogisme</button>
+          <div class="isi">
+            <br> <b>Rumus Silogisme: </b><br>
+            <img src="gambar/silogisme.jpg" alt="silogisme.jpg" height="200px" width="230px">
+            <br>
+            Contoh: <br> 
+            premis 1: jika tidak membawa payung, maka kehujanan <br> premis 2: Jika kehujanan maka akan sakit <br> 
+            Kesimpulan: jika tidak membawa payung, maka akan sakit
+          </p>
+          </div>
+        </div>
+        </li>
+      </ul>
+      </div>
+    </section>
+
+    <section id="indo">
+      <h2>Bahasa Indonesia</h2>
+      <div class="accordion">
+      <ul>
+        <li> <div class="materi">Huruf Kapital</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Huruf Kapital</button>
+            <div class="isi">
+              <p>Huruf kapital atau huruf besar merupakan suatu huruf yang berukuran lebih besar dan berbentuk khusus. Penggunaannya lebih khusus di banding huruf kecil dan punya aturan tersendiri.</p><br>
+              <b>Aturan penggunaan huruf kapital: </b>
+              <ol>
+                <li>Huruf pertama awal kalimat. <br>
+                Misalnya: Kita harus belajar lebih giat</li>
+                <li> Huruf pertama unsur nama orang, termasuk julukan.  <br>
+                Misalnya: Dewi Sartika, Bapak Koperasi </li>
+                <li>Huruf kapital tidak digunakan sebagai huruf pertama nama orang yang digunakan sebagai nama jenis atau satuan ukuran. <br>
+                Misalnya: 15 watt, ikan mujair </li>
+                <li>Huruf kapital digunakan pada nama orang seperti pada nama teori, hokum, dan rumus. <br>
+                Misalnya: teori Darwin, rumus Phytagoras </li>
+                <li>Huruf kapital digunakan pada awal kalimat dalam petikan langsung <br>
+                Misalnya: Ibu berpesan, "Berhati-hatilah , Nak!" </li>
+                <li>Huruf kapital tidak digunakan untuk menulis huruf pertama kata yang bermakna 'anak dari' seperti bin, binti, boru, dan van, kecuali ditulis sebagai awal nama atau huruf pertama kata tugas dari. <br>
+                Misalnya: Fatimah binti Salim, Indani boru Sitanggang </li>
+                <li>Huruf kapital digunakan sebagai huruf pertama dalam hal tertentu yang berkaitan dengan nama agama, kitab suci, dan Tuhan, termasuk sebutan dan kata ganti Tuhan serta singkatan nama Tuhan. <br>
+                Misalnya: Buddha, Hindu, Islam, Al-Qur'an </li>
+                <li>Huruf kapital digunakan sebagai huruf pertama unsur nama gelar kehormatan, kebangsawanan, keturunan, keagamaan, atau akademik yang diikuti nama orang dan gelar akademik yang mengikuti nama orang. <br>
+                Misalnya: Mahaputra Yamin, Teuku Umar, La Ode Khairudin </li>
+              </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+
+         <li> <div class="materi">Huruf Miring</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Huruf Miring</button>
+            <div class="isi">
+              <p>
+                <ol>
+                  <li>Huruf miring digunakan untuk menuliskan judul buku, judul film, judul album lagu, judul acara televisi, judul siniar, judul lakon, dan nama media massa yang dikutip dalam tulisan, termasuk dalam daftar pustaka. 
+                  Misalnya: <br>
+                  - Saya sudah membaca buku <i>Salah Asuhan </i>karangan Abdoel Moeis. <br>
+                  - Majalah <i> Poedjangga Baroe </i>menggelorakan semangat kebangsaan. </li>
+                  <li> Huruf miring digunakan untuk menegaskan atau mengkhususkan huruf, bagian kata, kata, atau kelompok kata dalam kalimat.
+                  Misalnya: <br>
+                  - Huruf terakhir kata <i>abad</i> adalah <i>d</i>. <br>
+                  - Imbuhan <i>ber-</i> pada kata <i>berjasa</i> bermakna 'memiliki'.</li>
+                  <li>Huruf miring digunakan untuk menuliskan kata atau ungkapan dalam bahasa daerah dan bahasa asing. Misalnya: <br>
+                  - Kita perlu memperhitungkan rencana kegiatan dengan baik agar tidak <i>malapeh awo</i>. <br> 
+                  - Nama ilmiah buah manggis adalah <i>Garcinia mangostana</i>. <br> 
+                  - <i>Weltanschauung</i> bermakna 'pandangan dunia'. </li>
+
+                </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+
+         <li> <div class="materi">Huruf Tebal</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Huruf Tebal</button>
+            <div class="isi">
+              <p>
+                <ol>
+                  <li>Huruf tebal digunakan untuk menegaskan bagian tulisan yang sudah ditulis miring. <br>
+                    Misalnya: <br>
+                    - Huruf <b>dh</b>, seperti pada kata Ramadhan, tidak terdapat dalam ejaan bahasa Indonesia. <br> 
+                    - Kata <b>et</b> dalam ungkapan ora et labora berarti 'dan'. </li>
+                
+                  <li>Huruf tebal digunakan untuk menegaskan bagian karangan, seperti bab atau subbab. 
+                    Misalnya:  <br>
+                    <b>BAB I PENDAHULUAN</b> <br>
+                    <b>1.1 Latar Belakang dan Masalah</b> <br>
+                    Kondisi kebahasaan di Indonesia saat ini diwarnai oleh bahasa standar... <br>
+                    <b>1.1.1 Latar Belakang </b><br>
+                    Masyarakat Indonesia yang heterogen menyebabkan munculnya sikap beragam...</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li> <div class="materi">Kata Dasar</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Kata Dasar</button>
+            <div class="isi">
+              <p>Kata dasar ditulis secara mandiri. <br> 
+                Misalnya: <br> 
+                - kantor <br> 
+                - pergi <br> 
+                - ramai <br> 
+                - sangat</p>
+            </div>
+          </div>
+        </li>
+
+        <li> <div class="materi">Kata Berimbuhan</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Kata Berimbuhan</button>
+            <div class="isi">
+              <p>Kata berimbuhan adalah kata dasar yang mendapatkan imbuhan (awalan, sisipan, akhiran, atau gabungan) sehingga mengalami perubahan bentuk, fungsi, dan makna. Imbuhan ini berfungsi untuk membentuk kata baru dengan arti yang berbeda dari kata dasarnya.<br>
+                <b>Jenis-Jenis Imbuhan Dikelompokkan Berdasarkan:</b> 
+                <ol>
+                  <li>Awalan (Prefiks) <br>
+                  Imbuhan yang diletakkan di awal kata dasar. Contoh: me-, ber-, ter-, pe-, ke-  </li>
+                  <li>Sisipan (Infiks) <br>
+                  Imbuhan yang diletakkan di tengah kata dasar. Contoh: -el-, -em-, -er- </li>
+                  <li>Akhiran (Sufiks) <br> 
+                    Imbuhan yang diletakkan di akhir kata dasar. Contoh: -kan, -i, -an, -nya 
+                  </li>
+                  <li>Gabungan Awalan dan Akhiran <br>
+                  Gabungan awalan dan akhiran yang dikenakan pada kata dasar secara bersamaan. Contoh: ke- -an, ber- -an, pe- -an, me- -kan </li>
+                </ol>
+
+                <b>Fungsi kata berimbuhan: </b> <br>
+                <ol>
+                  <li>Mengubah makna kata dasar: <br>
+                  Contohnya, kata dasar "ajar" menjadi "belajar" (melakukan kegiatan belajar) atau "pelajaran" (hasil dari belajar). </li>
+                  <li>Mengubah kelas kata: <br>
+                  Contohnya, kata dasar "baca" (kata benda) menjadi "membaca" (kata kerja) atau "pembaca" (kata benda). </li>
+                  <li>Menambah informasi tentang kata dasar: <br>
+                  Misalnya, kata "berlari" (kata kerja) memiliki informasi tambahan bahwa kegiatan berlari dilakukan secara berulang atau berkelanjutan. </li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+      </div>
+    </section>
+
+    <section id="english">
+      <h2>Bahasa Inggris</h2>
+      <div class="accordion">
+      <ul>
+        <li> <div class="materi">Main Idea</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Main Idea</button>
+            <div class="isi">
+              <p>Main idea (Ide Pokok) <br>
+                Adalah inti atau gagasan utama yang dibahas dalam sebuah paragraf atau teks. Main idea sering ditemukan di awal, tengah, atau akhir paragraf, tetapi terkadang harus disimpulkan dari keseluruhan isi. <br>
+                <br>Sifat Main Idea <br>
+                  - Bersifat Spesifik (satu kalimat) <br>
+                  - Menggambarkan isi pembahasan <br>
+                  - Dapat ditemukan dalam paragraf <br>
+                
+                <br>Cara Menentukan Main Idea
+                <ol>
+                  <li> Baca keseluruhan paragraf atau teks untuk memahami konteks. <br>
+                  Baca teks dengan saksama kemudian pahami isi nya.  </li>
+                  <li> Identifikasi kalimat utama (topic sentence). Kalimat utama sering muncul di: <br>
+                    - Awal paragraf: Mengawali dengan pernyataan umum, lalu diikuti detail. <br>
+                    - Akhir paragraf: Menyimpulkan ide yang dijelaskan sebelumnya. <br>
+                    - Terkadang di tengah paragraf atau tersebar di seluruh paragraf.
+                  </li>
+                  <li> Hindari terjebak pada detail kecil; fokus pada keseluruhan pesan yang ingin disampaikan. <br>
+                  Fokus dari apa yang ingin disampaikan dalam paragraf, perhatikan kata yang sering digunakan.</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li> <div class="materi">Main Topic</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Main Topic</button>
+            <div class="isi">
+              <p> Main Topik (Topik Utama) <br>
+                Adalah subjek utama atau tema besar dari teks. Biasanya berupa kata atau frasa pendek yang mewakili keseluruhan isi teks. <br>
+                <br>Sifat Main Topic <br>
+                  - Bersifat umumm (satu kata/frasa) <br>
+                  - Menggambarkan topik besar <br>
+                  - Harus disimpulkan dari seluruh teks <br>
+  
+                <br>Cara Menentukan Main Idea <br>
+                  -  Temukan kata atau frasa yang sering diulang dalam teks. <br>
+                  -  Perhatikan judul, subjudul, atau kata kunci dalam paragraf.  <br>
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li> <div class="materi">Semantic</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Semantic</button>
+            <div class="isi">
+              <p>Materi semantik berkaitan dengan pemahaman makna kata dan kalimat, termasuk jenis-jenis makna, perubahan makna, serta hubungan antar kata. <br>
+                <ol>
+                  <li>Jenis-Jenis Makna Kata: <br>
+                    Memahami berbagai jenis makna kata, seperti denotasi (makna sebenarnya) dan konotasi (makna tambahan), serta makna leksikal dan gramatikal. </li>
+                  <li>Perubahan Makna Kata: <br>
+                  Mengidentifikasi perubahan makna kata dari waktu ke waktu, termasuk perluasan makna, penyempitan makna, dan pergeseran makna. </li>
+                  <li>Hubungan Antar Kata: <br>
+                  Memahami hubungan antara kata-kata, seperti sinonim (persamaan makna), antonim (lawan makna), dan polisemi (makna ganda). </li>
+                  <li>Makna Kontekstual: <br>
+                  Memahami makna kata dalam konteks kalimat atau teks tertentu. </li>
+                  <li>Diksi dan Idiom: <br>
+                  Memahami penggunaan kata yang tepat (diksi) dan ungkapan (idiom) dalam bahasa Indonesia. </li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li> <div class="materi">Summary</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Summary</button>
+            <div class="isi">
+              <p>Ringkasan (summary) dalam bahasa Inggris adalah penyajian singkat dari poin-poin penting suatu teks, tanpa kehilangan inti dari informasi tersebut. Ringkasan dibuat dengan kata-kata sendiri dan lebih pendek dari teks aslinya. <br>
+                <ol>
+                  <li>Membaca dan Memahami Teks: <br>
+                  Membaca teks secara keseluruhan untuk memahami poin-poin utama dan detail penting. </li>
+                  <li>Mengidentifikasi Ide Pokok: <br>
+                  Menentukan ide pokok atau gagasan utama dari setiap paragraf atau bagian teks. </li>
+                  <li>Menulis Ringkasa: <br>
+                  Menyajikan ide pokok tersebut dalam kalimat sendiri, dengan bahasa yang lebih ringkas dan padat. </li>
+                  <li>Menghindari Opini Pribadi: <br>
+                  Ringkasan haruslah objektif, tidak memasukkan opini, interpretasi, atau kesimpulan pribadi. </li>
+                  <li>Menjaga Alur: <br>
+                  Ringkasan harus tetap mengikuti alur logika dari teks asli. </li>
+                  <li>Memeriksa Ulang: <br>
+                  Setelah selesai, periksa kembali ringkasan untuk memastikan kejelasan, ketepatan, dan kelengkapan informasi. </li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li> <div class="materi">Purpose</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Purpose</button>
+            <div class="isi">
+              <p>Materi "purpose" dalam bahasa Inggris, atau tujuan, membahas cara mengungkapkan maksud, tujuan, atau alasan di balik suatu tindakan. Materi ini mencakup berbagai ungkapan seperti "in order to", "so that", "to", serta penggunaan "would like to", "will", dan "be going to" untuk menyatakan niat. <br>
+                <ol>
+                  <li>Ungkapan Tujuan (Expressing Purpose): <br>
+                  <b> "To" + Verb 1 (Infinitive): </b><br>
+                  Merupakan cara paling dasar untuk menyatakan tujuan. Contoh: "I study hard to pass the exam." (Saya belajar giat untuk lulus ujian). <br>
+                  <b>"In order to" + Verb 1: </b> <br>
+                  Ungkapan ini lebih formal dan menekankan tujuan. Contoh: "He is saving money in order to buy a car." (Dia menabung uang agar bisa membeli mobil). <br>
+                  <b>"So that" + Klausa: </b> <br>
+                  Digunakan untuk menyatakan tujuan dengan menjelaskan akibat yang diinginkan. Contoh: "She wears a jacket so that she won't be cold." (Dia memakai jaket agar dia tidak kedinginan). </li>
+                  <li>Ungkapan Niat (Expressing Intention): <br>
+                  <b>"Would like to":</b> <br>
+                  Menyatakan keinginan yang lebih sopan dan belum tentu pasti akan dilakukan. Contoh: "I would like to visit Japan someday." (Saya ingin mengunjungi Jepang suatu saat nanti). <br>
+                  <b>"Will":</b> <br>
+                  Menyatakan keinginan yang spontan atau akan dilakukan. Contoh: "I will help you with your bags." (Saya akan bantu kamu dengan tas-tas itu). <br>
+                  <b>"Be going to":</b> <br>
+                  Menyatakan niat yang sudah direncanakan atau diputuskan. Contoh: "I am going to study English next year." (Saya akan belajar Bahasa Inggris tahun depan). <br>
+                  <b>"Would rather":</b> <br>
+                  Menyatakan pilihan. Contoh: "I would rather stay home than go to the party." (Saya lebih suka tinggal di rumah daripada pergi ke pesta). 
+                </li>
+                  <li>Adverb of Purpose: <br>
+                    Kata keterangan yang menjelaskan alasan atau tujuan dari suatu tindakan. Contoh: "He ran quickly to catch the bus." (Dia berlari dengan cepat untuk mengejar bus). 
+                  </li>
+                
+                </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      </div>
+    </section>
+
+    <section id="pm">
+      <h2>Matematika</h2>
+      <div class="accordion">
+      <ul>
+        <li> <div class="materi">Sistem Bilangan</div>
+          <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Sistem Bilangan</button>
+            <div class="isi">
+              <p>Sistem bilangan adalah cara untuk merepresentasikan angka menggunakan simbol dan aturan tertentu. Ada beberapa jenis sistem bilangan yang umum digunakan, seperti desimal, biner, oktal, dan heksadesimal. Masing-masing sistem bilangan memiliki basis yang berbeda, yang menentukan jumlah simbol yang digunakan. <br>
+                <ol>
+                  <li>Sistem Bilangan Desimal (Basis 10): <br>
+                    Sistem yang paling umum digunakan dalam kehidupan sehari-hari. Terdiri dari 10 simbol, yaitu 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9. </li>
+                  <li> Sistem Bilangan Biner (Basis 2): <br>
+                    Sistem yang digunakan dalam komputer. Terdiri dari 2 simbol, yaitu 0 dan 1. Setiap digit dalam bilangan biner disebut bit. </li>
+                  <li> Sistem Bilangan Oktal (Basis 8): <br>
+                    Sistem ini menggunakan 8 simbol, yaitu 0, 1, 2, 3, 4, 5, 6, dan 7. </li>
+                  <li> Sistem Bilangan Heksadesimal (Basis 16): <br>
+                    Sistem ini menggunakan 16 simbol, yaitu 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, dan F. </li>
+                </ol>
+
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="materi">Aritmatika Sosial</div>
+           <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Aritmatika Sosial</button>
+            <div class="isi">
+              <p> Aritmatika Sosial <br>
+                <ol>
+                  <li>Harga Beli <br>
+                    Harga pembelian merupakan nilai uang dari suatu barang yang dibeli. Harga beli sering disebut modal. Dalam situasi tertentu, modal adalah harga beli ditambah dengan ongkos atau biaya lainnya. <br>
+                    Berikut Rumus menentukan harga pembelian jika diketahui persentase untung/rugi: <br>
+                    <span style="color: red;">100/(100 + % untung) x Harga Jual </span> <br>
+                    <span style="color: red;">100/(100 - % rugi) x Harga Jual</span>
+                  </li>
+                  <li>Harga Jual <br>
+                    Harga penjualan adalah nilai uang dari suatu barang yang dijual. <br>
+                    Berikut Rumus menentukan harga pembelian jika diketahui persentase untung/rugi: <br>
+                    <span style="color: red;">(100 + % untung )/100 x Harga Beli </span> <br>
+                    <span style="color: red;">(100 - % untung )/100 x Harga Beli </span>
+                  </li>
+                  <li>Untung <br>
+                  Laba atau untung adalah selisih positif antara hasil penjualan dikurangi dengan biaya dan pajak. Rumus dalam mendapatkan keuntungan adalah sebagai berikut: <br>
+                  <span style="color: red;">Untung = harga jual - harga beli</span>
+                </li>
+                  <li>Rugi <br>
+                  Kerugian adalah selisih dari harga penjualan dengan pembelian jika harga penjualan kurang dari harga pembelian. Rumus dalam mencari nilai rugi adalah sebagai berikut: <br>
+                <span style="color: red;">Rugi = harga beli - harga jual</span></li>
+                  <li>Impas <br>
+                  Impas terjadi apabila harga jual sama dengan harga beli atau dengan kata lain penjual tidak mendapatkan keuntungan maupun kerugian. Rumus dalam mencari nilai impas adalah sebagai berikut: <br>
+                <span style="color: red;">Impas = Harga Beli = Harga Jual</span></li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </li>
+    
+        <li>
+          <div class="materi">Fungsi Linier</div>
+           <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Fungsi Linier</button>
+            <div class="isi">
+              <p>Fungsi linear merupakan fungsi yang mendapat pangkat tertinggi variabelnya sama dengan satu. <br>
+                Bentuk umum fungsi linier: <br>
+                <span style="text-align: center;">f(x)=ax+b</span>f(x)=ax+b <br>
+                Fungsi linear diartikan sebagai suatu fungsi yang membentuk grafik garis lurus.
+              </p>
+            </div>
+          </div>
+        </li>
+      
+        <li>
+          <div class="materi">Barisan & Deret Aritmatika</div>
+           <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Barisan & Deret Aritmatika</button>
+            <div class="isi">
+              <p><b>Barisan Geometri</b> <br>
+                Barisan adalah kumpulan bilangan yang diurutkan dengan aturan tertentu. Setiap bilangan yang terdapat pada barisan bilangan disebut suku, sedangkan aturan pengurutan suku- suku barisan bilangan disebut pola bilangan. <br>
+                Deret bilangan adalah jumlah dari suku-suku suatu barisan. Apabila U1, U2, U3, U4,... disebut dengan barisan bilangan, maka bentuk deret bilangan adalah U1+U2+U3+U4+...+Un <br>
+
+                Barisan bilangan dinyatakan dalam bentuk U1, U2, U3, U4,... Un. Barisan bilangan ini disebut sebagai barisan aritmatika apabila selisih dua suku yang berurutan selalu tetap. Hasil pengurangan suatu suku dengan suku sebelumnya dinamakan beda dan dinotasikan dengan b. <br>
+                b = U2-U1=U3-U2=U4-U3=...=U(n-1)-Un <br>
+                Apabila suku pertama dinyatakan dengan  a dalam barisan aritmatika tersebut, maka bentuk umum barisan aritmatika adalah <br>
+                a,a + b,a + 2b,a + 3b,...,a + (n - 1)b <br>
+                Apabila a menyatakan suku pertama, n menyatakan banyak suku, dan b adalah beda suatu barisan aritmatika, maka <br>
+                U1 = a <br>
+                U2 = a + b <br>
+                U3 = a + 2b <br>
+                ...<br>
+                Un = a + (n-1)b <br>
+                Jadi, suku ke-n barisan aritmatika (Un) dirumuskan sebagai <br>
+                <span style="color: red;">Un = a + (n-1)b</span> <br>
+                <br><b>Deret Geometri</b> <br>
+                Deret aritmatika atau deret hitung apabila semua suku-suku pada barisan aritmatika dijumlahkan, sehingga bentuk umum deret aritmatika adalah <br>
+                a + (a + b) + (a + 2b) + (a + 3b) +... +(a + (n - 1)b)<br>
+                Deret aritmatika yang mempunyai beda lebih dari nol atau positif, maka deretnya disebut deret aritmatika naik, sedangkan deret aritmatika yang mempunyai beda kurang dari nol atau negatif, maka deretnya disebut deret aritmatika turun. <br>
+                rumus jumlah n suku pertama deret aritmatika adalah <br>
+                <span style="color: red;">Sn =  n/2 (2a+ (n - 1)b)  atau  Sn =  n/2 (a+ Un)</span>
+              </p>
+            </div>
+          </div>
+        </li>
+      
+        <li>
+          <div class="materi">Barisan & Deret Geometri</div>
+           <div class="item">
+            <button class="nama" onclick="toggleItem(this)">Barisan & Deret Geometri</button>
+            <div class="isi">
+              <p><b>Barisan Geometri </b><br>
+                Suatu barisan U1, U2, U3, U4,... Un disebut barisan geometri apabila perbandingan dua suku yang berurutan selalu tetap. Hasil bagi suatu suku oleh suku sebelumnya disebut rasio dan dinotasikan dengan r. <br>
+                Apabila suku pertama dinyatakan dengan a, maka bentuk umum barisan geometri adalah <br>
+                a,ar, ar^2,ar^3, ... ar^(n-1) <br>
+                Apabila a menyatakan suku pertama, n menyatakan banyak suku, dan r adalah rasio suatu barisan geometri, maka <br>
+                U1=a  <br>
+                U2=ar <br>
+                U3=ar^2 <br>
+                ...  <br>
+                Un=ar^(n-1) <br>
+                Jadi, suku ke-n barisan geometri (Un) dirumuskan sebagai <br>
+                <span style="color: red;">Un = ar^(n-1) <br></span>
+                <br><b>Deret Geometri <br></b>
+                apabila suku-suku pada barisan geometri dijumlahkan, maka akan terbentuk deret geometri atau deret ukur, sehingga bentuk umum deret geometri adalah <br>
+                a + ar + ar^2 +ar^3 + ...+ar^(n-1) <br>
+                Pada deret geometri U1 + U2 + U3 + U4 +... Un, apabila U(n+1) > Un, maka deretnya disebut deret geometri naik dan apabila U(n+1) < Un, maka deretnya disebut deret geometri turun. <br>
+                Jadi, rumus jumlah n suku pertama deret aritmatika adalah <br>
+                <span style="color: red;">Sn = (a- ar^n) / (1-r)</span> <br>
+              </p>
+            </div>
+          </div>
+        </li>
+      
+      </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+  // Fungsi untuk menampilkan satu bagian dan menyembunyikan lainnya
+  function tombol(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(s => s.style.display = 'none');
+      const target = document.getElementById(id);
+      if (target) target.style.display = 'block';
+  }
+
+  // Fungsi toggle untuk konten materi (accordion)
+  function toggleItem(button) {
+    const item = button.parentElement;
+    item.classList.toggle('active');
+  }
+
+  // Saat halaman dibuka pertama kali, tampilkan 'pu' dan sembunyikan lainnya
+  window.onload = function() {
+    tombol('pu');
+  };
+</script>
+
+    <div class="contact">
+        <h2 class="akhir"><b>StudyWithAmi</b></h2>
+        <p>Conect With Us</p>
+        <a href="https://x.com/arabelajar69" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <a href="https://www.instagram.com/_iniamira/?igsh=anl6N2c1MzY3YWYw" target="_blank"><i class="fa-brands fa-instagram"></i> </a></li>
+        <a href="https://youtube.com/@nusantaranumerik?si=C_llWTCYo-eJxauI" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me/085333771197" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+
+    <footer>
+        <p>Copyright &copy; 2025 By Ami</p>
+    </footer>
+
+</body>
+</html>
